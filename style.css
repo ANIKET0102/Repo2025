@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: #131111;
+    background-image: url(./Group\ 2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 100px;
+    cursor: pointer;
+    scroll-behavior: smooth;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 850px) {
+    body {
+        background-size: contain;
+        /* Adjust image size to fit */
+        background-position: center;
+        /* Optional: Change the focus area */
+    }
+}
+
+.one {
+    height: auto;
+    width: 90%;
+    background-color: #6a5eff;
+    backdrop-filter: blur(200px);
+    box-shadow: 0px 4px 30px rgba(51, 7, 121, 0.9);
+    margin-top: 20px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.one1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 150px;
+    border-radius: 40px;
+    background-color: #fff;
+    box-shadow: 0px 4px 30px rgba(51, 7, 121, 0.9);
+}
+
+.one2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 800px;
+    border-radius: 50px;
+    gap: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 30px rgba(51, 7, 121, 0.9);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.one2 a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(164, 131, 255);
+    transition: 0.5s;
+    border-radius: 10px;
+    height: 30px;
+    width: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.one2 a:hover {
+    color: rgb(35, 6, 37);
+    background-color: rgb(255, 254, 254);
+    transform: scale(1.10);
+}
+
+.one3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    height: 70px;
+    width: 150px;
+    background-color: #fff;
+    box-shadow: 0px 4px 30px rgba(51, 7, 121, 0.9);
+}
+
+
+.two {
+    height: auto;
+    width: 100%;
+    /* background-color: #fff; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.two1 {
+    height: 450px;
+    width: 450px;
+    /* background-color: rgb(39, 37, 37); */
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    /* padding: 20px; */
+    color: white;
+}
+
+.two11 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.two h2 {
+    background: linear-gradient(90deg, #da2800, #cf05cf);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    -webkit-background-clip: text;
+    /* Clips the background to the text */
+    -webkit-text-fill-color: transparent;
+    /* Makes the text itself transparent */
+    font-size: 50px;
+}
+
+.two1 p {
+    font-weight: 10;
+    text-align: center;
+}
+
+.two2 {
+    height: 400px;
+    width: 400px;
+    border-radius: 30px;
+    /* background-color: yellow; */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.two2 img {
+    height: 350px;
+    width: auto;
+}
+
+.three {
+    height: auto;
+    width: 90%;
+    background-color: #000000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 30px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 450px);
+    justify-items: center;
+
+}
+
+@media (max-width: 750px) {
+    .three {
+        grid-template-columns: 1fr;
+        /* 1 column per row */
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.three1,
+.three2 {
+    height: 450px;
+    width: 400px;
+    background-color: rgb(37, 34, 34);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#img1 {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.upper {
+    height: 280px;
+    background-color: #fff;
+    border-radius: 25px 25px 0px 0px;
+    background-color: rgb(37, 34, 34);
+
+}
+
+.lower {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+#h1A {
+    color: white;
+}
+
+#h1B {
+    color: white;
+}
+
+.button1{
+    height: 40px;
+    width: 40%;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    /* Semi-transparent white */
+    /* border: 1px solid rgba(255, 255, 255, 0.4); */
+    /* Border for glass effect */
+    border: 0px;
+    border-radius: 18px;
+    /* Rounded corners */
+    backdrop-filter: blur(10px);
+    /* Glass blur effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);cursor: pointer;
+    transition: 0.5s;
+    color: #ffffff;
+}
+
+.button1:hover{
+    background: rgba(0, 0, 0, 0.1);
+    color: white;
+
+}
+
+
+.four {
+    height: auto;
+    width: 90%;
+    padding: 20px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* gap: 20px;   */
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.1);
+    /* Semi-transparent white */
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    /* Border for glass effect */
+    border-radius: 15px;
+    /* Rounded corners */
+    backdrop-filter: blur(10px);
+    /* Glass blur effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.four1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+}
+
+.four1 h1 {
+    text-align: center;
+    font-family: 40px;
+    color: white;
+
+}
